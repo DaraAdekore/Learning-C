@@ -9,7 +9,9 @@ void clearScreen()
     system("clear"); // On Unix-like systems, including macOS
 #endif
 }
-
+/*
+For each number in pascals triangle, it can be calculated using the nCr formula
+*/
 uint64_t choose(int n, int r)
 {
     if (n < r || n < 0 || r < 0)
@@ -27,6 +29,8 @@ uint64_t choose(int n, int r)
 
     return result;
 }
+
+// Prints the triangle
 void printTriangle(int n)
 {
 
